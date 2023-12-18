@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #1c282e;
+    --secondary-color: #6a8595;
+    --white: #fff;
+    --navbar: #273f4b;
+    --button: #2b4c4d;
+}
+/*Header*/
+.navbar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+.navbar-container .burger-menu{
+    display: none;
+}
+.navbar-container .cart{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.navbar-container .menu-logo-container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.menu-logo-container .logo-header{
+    text-align: center;
+    padding: 1rem 0;
+    width: 20%;
+}
+.menu-logo-container .navbar-menu{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.navbar-menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+}
+.navbar-menu ul li{
+    text-align: center;
+    padding: 0.8rem;
+    width: 25%;
+    border-bottom: 0.2rem solid #1c282e;
+    border-top: 0.2rem solid #1c282e;
+}
+.navbar-menu ul li:hover{
+    border-bottom: 0.2rem solid white;
+}
+.navbar-menu ul li a{
+    font-size: 1.6rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 2rem;
+}
+.main-container .card-container{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.info-container .brand,.price{
+    font-size: 1.6rem;
+}
+.info-container .product-name{
+    font-size: 2.1rem;
+}
+.footer-container .footer-content-container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5%;
+}
+.footer-container .content{
+    width: 33%;
+}
+.footer-content-container .social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media .footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem solid var(--white);
+    border-radius: 100%;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+@media (min-width: 1024px){
+    .navbar-container .menu-logo-container{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+}
